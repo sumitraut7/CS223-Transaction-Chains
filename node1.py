@@ -12,10 +12,10 @@ async def get_db_connection():
     return await aiomysql.connect(
         host='localhost',       # Database host
         port=3306,              # Port (default MySQL port)
-        user='root',       # Username
-        password='root2000',  # Password
-        db='server1',     # Database name
-        autocommit=True # Event loop (using the asyncio event loop)
+        user='root',            # Username
+        password='root2000',    # Password
+        db='server1',           # Database name
+        autocommit=True         # Event loop (using the asyncio event loop)
     )
 
 async def run_query(query, params):
