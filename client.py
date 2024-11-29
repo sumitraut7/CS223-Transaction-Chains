@@ -1,5 +1,3 @@
-
-
 import asyncio
 import websockets
 import json
@@ -12,7 +10,6 @@ node_ports = {
     3: 8083,
     4: 8084
 }
-
 
 async def send_message_to_node(message, port):
     address = f"ws://127.0.0.1:{port}"
@@ -27,7 +24,6 @@ async def send_message_to_node(message, port):
         print(f'Connection to server {address} on port {port} closed unexpectedly : {e}')
     except Exception as e:
         print(f'An error occurred while communicating with the server on port {port}: {e}')
-
 
 # drive the client connection
 async def main():

@@ -1,5 +1,4 @@
-# SuperFastPython.com
-# example of an asyncio websocket server with websockets
+
 import asyncio
 from warnings import catch_warnings
 import json
